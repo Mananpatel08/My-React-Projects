@@ -1,0 +1,163 @@
+body.dark {
+    background-color: #121212;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    nav{
+        border-color: #262626 !important;
+    }
+
+    div.mid {
+        background-color: #121212 !important;
+        border: #262626 1px solid !important;
+    }
+    div.mid a{
+        color: #fff;
+    }
+    .active{
+        color: #703BF7 !important;
+    }
+    div.right button{
+        background-color: #121212 !important;
+        border: #262626 1px solid !important;
+        color: #fff !important;
+    }
+    div.right button a{
+        color: #fff !important;
+    }
+
+    .home-container p{
+        color: #d3d3d3 !important;
+    }
+
+    .position-relative input{
+        background-color: #121212 !important;
+        border: #262626 1px solid !important;
+        color: #fff !important;
+    }
+
+    .card{
+        background-color: #121212 !important;
+        border: 1px solid #262626 !important;
+        color: #ffffffd6 !important;
+    }
+    .card:hover:not(:has(.add-cart-btn:hover)){
+        box-shadow: rgba(223, 223, 223, 0.35) 0px -50px 36px -28px inset;
+    }
+    .category{
+        background-color: #1b1b1b !important;
+        border: 1px solid #262626 !important;
+        color: #fff !important;
+    }
+    .filter-bar{
+        border: 1px solid #262626 !important;
+    }
+    .product-count{
+        color: #bcbaba !important;
+    }
+    .product-card{
+        background-color: #1d1d1d !important;
+        border: 1px solid #262626 !important;
+        color: #fff !important;
+    }
+
+    .back-btn{
+        background-color: #151515 !important;
+        border: 1px solid #262626 !important;
+        color: #fff !important;
+    }
+
+    .loginMain{
+        background-color: #1b1b1b !important;
+        border-color: #262626 !important;
+    }
+    .loginMain p input{
+        background-color: #121212 !important;
+        border: #262626 1px solid !important;
+        color: #fff !important;
+    }
+
+    .about-container{
+        background-color: #121212;
+        border: 1px solid #373636 !important;
+    }
+    .about-container h1{
+        color: #fff !important;
+    }
+    .about-container p{
+        color: #fff !important;
+    }
+    .about-container p strong{
+        color: #fff !important;
+    }
+    .about-container .signature{
+        border-color: #262626 !important;
+    }
+    .features-container{
+        background-color: #121212 !important;
+    }
+    .features{
+        background-color: #121212 !important;
+    }
+    .feature-box{
+        background-color: #1b1b1b !important;
+        border: 1px solid #262626 !important;
+    }
+    .filter-bar ul li{
+        padding: 6px 0px 6px 16px;
+        background: linear-gradient(270deg, #121212 10%, #191919 70%);
+        cursor: pointer;
+        transition: border-left 0.3s ease-in-out;
+    }
+    .filter-bar ul li:hover{
+        background: linear-gradient(270deg, #121212 10%, #242424 70%);
+    }
+    .no-text{
+        color: rgb(134, 134, 134) !important;
+    }
+    .card-text span{
+        color: #929191 !important;
+    }
+    .cart-text {
+        color: #ffffff !important;
+    }
+    .add-cart-btn{
+        background-color: #151515;
+        color: white;
+        border-color:#242424;
+    }
+    .dropdown-menu{
+        background-color: #1d1d1d;
+    }
+    .dropdown-menu li a{
+        color: white !important;
+    }
+    .dropdown-menu li span{
+        color: white !important;
+    }
+    .item-card{
+        border-color: #262626;
+    }
+    .your-cart{
+        border-color: #535252 !important;
+    }
+    .o-top{
+        border-color: #535252 !important;
+    }
+    .o-down{
+        border-color: #535252 !important;
+    }
+    .no-cart-text i{
+        color: #4e4e4e !important;
+    }
+    .no-cart-text p{
+        color: #4e4e4e !important;
+    }
+    .git-btn{
+        background-color: #121212 !important ;
+        border-color: #262626;
+        color: white;
+        
+    }
+
+}

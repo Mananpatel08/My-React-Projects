@@ -1,0 +1,160 @@
+.App {
+  display: flex;
+  height: 95%;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#root{
+  background-color:aliceblue;
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.tasks{
+  max-height: 60%;
+  overflow-y: scroll;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-content{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+.custom-overlay{
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+/* Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Remove default caret */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Style your custom icon */
+.dropdown-icon {
+  color: #333; /* change as needed */
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.dropdown-item.active {
+  background-color: rgb(10, 10, 10) !important;
+  color: rgb(255, 255, 255);
+}
+
+
+.addbtn{
+  color: rgb(196, 196, 196) ;
+  border-radius: 10px;
+  border: 2px rgb(196, 196, 196) dotted;
+}
+
+.task-item{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.tag{
+  font-size: 14px;
+}
+
+.filter button{
+  font-size: 12px;
+  height: 20px;
+  border-radius: 5px;
+  color: rgb(196, 196, 196) ;
+}
+button.active {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+div.active {
+  width: 100%;
+  padding: 5px 0px;
+  border-radius: 10px;
+  background-color: rgb(245, 240, 240) !important;
+  border: none;
+}
+
+
+.filter i{
+  font-size: 14px;
+  color: rgb(187, 192, 192);
+}
+.text-danger {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+body > div.ReactModalPortal > div{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.modal-content{
+  margin-top: 20px;
+  background-color: white;
+  width: 25%;
+  border-radius: 10px !important;
+}
+
+.text-muted {
+  font-size: 12px;
+}

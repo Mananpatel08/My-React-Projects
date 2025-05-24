@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loopa</title>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <div class="js-animation-helper"></div>
+    <script src="animations.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+  <script>
+      // This script sets animation delay variables for headings and paragraphs
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set heading indices for staggered animations
+    const headings = document.querySelectorAll('.about-container h2');
+    headings.forEach((heading, index) => {
+      heading.style.setProperty('--heading-index', index + 1);
+    });
+    
+    // Set paragraph indices for staggered animations
+    const paragraphs = document.querySelectorAll('.about-container p:not(.signature)');
+    paragraphs.forEach((para, index) => {
+      para.style.setProperty('--para-index', index + 1);
+    });
+    
+    // Optional: Add scroll-triggered animations
+    // Only plays animations when elements come into view
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.visibility = 'visible';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Optional: For scroll-triggered animations, uncomment these lines
+    /*
+    const animatedElements = document.querySelectorAll('.about-container h1, .about-container h2, .about-container p');
+    animatedElements.forEach(el => {
+      el.style.visibility = 'hidden';
+      observer.observe(el);
+    });
+    */
+  });
+  </script>
+</html>
