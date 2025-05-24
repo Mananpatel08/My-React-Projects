@@ -1,12 +1,29 @@
-# React + Vite
+# Loopa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Loopa** is a modern and responsive e-commerce web application built with **React.js**. It allows users to seamlessly browse products, view details, and enjoy a clean, intuitive shopping experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Product listing with category-based filtering
+- Individual product detail pages
+- Smooth routing with React Router
+- Component-based architecture
+- Fast, clean, and optimized performance
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- React.js – JavaScript library for building user interfaces
+- React Router – Client-side routing for single-page applications
+- HTML5 and CSS3 – For page structure and styling
+- JavaScript (ES6+) – For logic and interactivity
+- Local Assets – For placeholder images and icons
+
+---
+
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mananpatel08/My-React-Projects.git
+   cd My-React-Projects/loopa
