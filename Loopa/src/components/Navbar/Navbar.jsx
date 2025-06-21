@@ -34,7 +34,32 @@ export const Navbar = () => {
               <Link to="/aboutme" className={`pe-5 ${location.pathname === '/aboutme' ? 'active' : '' }`} > About </Link>
           </div>
           
+          <div className="nav-mobile dropdown">
+            <button className="fw-semibold dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-list"></i>
+            </button>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li onClick={toggleTheme} className='p-1 px-3'>
+                  {theme === "light" ? (
+                    <><i className="bi bi-moon me-1" /> Dark</>
+                  ) : (
+                    <><i className="bi bi-brightness-high me-1" /> Light</>
+                  )}
+              </li>
+
+              <li>
+                <a class="dropdown-item" target="_blank" rel="noopener noreferrer"  href="https://github.com/Mananpatel08/Loopa-E-commerce">
+                  <i className="bi bi-github me-1"/> 
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+          
           <div className="right d-flex gap-2 fade-in-up">
+
               { isLogIn ? (
                 <>
                   <div className="dropdown">

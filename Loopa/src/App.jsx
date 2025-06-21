@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';           //<----- Bootstrap
 import './assets/css/index.scss'                             //<----- Global css
 import './assets/css/animation.scss'                        //<----- Animation css
 import './assets/css/darkmode.scss'                        //<----- Darkmode css
+import './assets/css/media.scss'                        //<----- Media css
 
 // =============React-Tools======================== //
 import { useState } from 'react'

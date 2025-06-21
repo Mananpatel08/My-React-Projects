@@ -37,7 +37,12 @@ nav {
     font-size: 20px;
     transition: color 0.3s ease, text-decoration-thickness 0.3s ease, text-underline-offset 0.3s ease;
 }
-
+.nav-mobile button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
 .right button {
     background-color: white;
     border: 1px solid black;
@@ -453,4 +458,8 @@ nav {
     width: 90px;
     object-fit: cover;
     opacity: 0.5;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
 }
